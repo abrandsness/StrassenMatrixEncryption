@@ -1,18 +1,18 @@
-* __Strassens Encryption__ - Final Project for Advanced Algorithm Design and Analysis - Whitworth University by Andi Brandsness, Finn McClone, James Holtz
+__Strassens Encryption__ - Final Project for Advanced Algorithm Design and Analysis - Whitworth University by Andi Brandsness, Finn McClone, James Holtz
 
-* __Andrea Brandsness' Contributions:__ 
+__Andrea Brandsness' Contributions:__ 
 * I researched and coded a recursive function for Strassen's matrix multiplication algorithm. (More on this algorithm below).
 * I coded a function to randomly generate a matrix that will always be invertible using the Linear Algebra concept of LU Factorization.
 * I coded functions to take text, remove spaces and symbols, and turn them into a matrix of numbers based on the letters of the text, and vise versa to turn numbered matrices back into readable text. These matrices can be put into an output file or read in from an output file.
 
 
-* __A short description of the purpose and goals of the program:__ a program that utilizes Strassen's algorithm to uses matrix multiplication to code and decode 256 character messages.
+__A short description of the purpose and goals of the program:__ a program that utilizes Strassen's algorithm to uses matrix multiplication to code and decode 256 character messages.
    
-* __How to run the program:__
+__How to run the program:__
 
-* __ASSUMPTIONS:__ We assume that the user can put a file key into the same folder as the code. We also assume that there will not be any rounding problems with precison since we use numbers 0-40.
+__ASSUMPTIONS:__ We assume that the user can put a file key into the same folder as the code. We also assume that there will not be any rounding problems with precison since we use numbers 0-40.
 
-* __A detailed description of how the code works.__
+__A detailed description of how the code works.__
 The main algorithm in our code is Strassen's algorithm to multiply matrices.  Strassens works by taking two nxn matrices where n is a power of 2.  Then Strassen's breaks the matrices down into four quadrents each, recursively until it has 2x2 matrices. Then, strassens has a series of 7 specific terms made from multiplying terms of the two 2x2 matrices.  Adding these 7 terms in a spcific way gives you four entries that equal the 2x2 matrix that is the solution to the two 2x2's multiplied.  Strassen's is more efficient than regular matrix multiplication because it multiples 2x2 in 7 multiplications rather than 8.  Once the 2x2s are calculated, the recursion comes back out to find another 2x2 pair, until the whole larger matrix is calculated from its sub 2x2's.  
 
 Strassen's is not efficient enough for small matrices to make a large difference, but the more 2x2's a larger matrix contains, the more multiplications Strassen's will save.  Strassen's uses 12.5% less multiplications than regular matrix multiplication.  So for example, multiplying two 16x16 matrices would take 4096 multiplications for regular matrix multiplication, but with Strassen's it only takes 3584. Saving over 500 multiplications.  This number becomes more exagerated as the matrices get larger.
@@ -21,7 +21,7 @@ The rest of the program works through basic concepts of linear algebra.  A rando
 
 To decrypt, the inverse of the key is needed. The key is left in terms of L and U because finding its inverse is much easier that way. U inverse and L inverse are both found, and the encrypted matrix E is then multiplied first by U inverse, then that result is multiplied by L inverse to reveal the text matrix. The text matrix is then converted back into letters and into a file, no longer in matrix form.
 
-* __Works Cited:__
+__Works Cited:__
 * https://www.mff.cuni.cz/veda/konference/wds/proc/pdf06/
 WDS06_106_m8_Ulrychova.pdf
 
