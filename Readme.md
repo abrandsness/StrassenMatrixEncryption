@@ -1,4 +1,4 @@
-* __Strassens Encryption__ - by Andi Brandsness, Finn McClone, James Holtz
+* __Strassens Encryption__ - Final Project for Advanced Algorithm Design and Analysis - Whitworth University by Andi Brandsness, Finn McClone, James Holtz
   
 * __A short description of the purpose and goals of the program:__ a program that utilizes Strassen's algorithm to uses matrix multiplication to code and decode 256 character messages.
    
