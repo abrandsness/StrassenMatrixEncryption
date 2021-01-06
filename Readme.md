@@ -1,5 +1,11 @@
 * __Strassens Encryption__ - Final Project for Advanced Algorithm Design and Analysis - Whitworth University by Andi Brandsness, Finn McClone, James Holtz
-  
+
+* __Andrea Brandsness' Contributions:__ 
+* I researched and coded a recursive function for Strassen's matrix multiplication algorithm. (More on this algorithm below).
+* I coded a function to randomly generate a matrix that will always be invertible using the Linear Algebra concept of LU Factorization.
+* I coded functions to take text, remove spaces and symbols, and turn them into a matrix of numbers based on the letters of the text, and vise versa to turn numbered matrices back into readable text. These matrices can be put into an output file or read in from an output file.
+
+
 * __A short description of the purpose and goals of the program:__ a program that utilizes Strassen's algorithm to uses matrix multiplication to code and decode 256 character messages.
    
 * __How to run the program:__
@@ -19,6 +25,6 @@ To decrypt, the inverse of the key is needed. The key is left in terms of L and 
 * https://www.mff.cuni.cz/veda/konference/wds/proc/pdf06/
 WDS06_106_m8_Ulrychova.pdf
 
-import secret: This module is used to generate Pseudo random numbers in a way that is more secure for encryption and decryption than the regular random module is. https://docs.python.org/3/library/secrets.html#module-secrets
+* import secret: This module is used to generate Pseudo random numbers in a way that is more secure for encryption and decryption than the regular random module is. https://docs.python.org/3/library/secrets.html#module-secrets
 
 
